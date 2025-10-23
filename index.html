@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil's Dev World - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient 3s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-purple-900 via-blue-900 to-cyan-900 text-white font-sans scroll-smooth">
+
+    <!-- Loading Screen -->
+    <div id="loading" class="fixed inset-0 bg-gradient-to-br from-purple-900 via-blue-900 to-cyan-900 z-50 flex items-center justify-center transition-opacity duration-500">
+        <div class="text-center">
+            <div class="w-16 h-16 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <p class="text-cyan-400 font-semibold text-lg">Welcome to Dev World...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed w-full glass-effect z-50 py-4 shadow-lg transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-2xl font-bold text-cyan-400 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                Dev World by Nikhil
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-cyan-400 font-semibold border-b-2 border-cyan-400">Home</a>
+                <a href="projects.html" class="hover:text-cyan-400 transition-all duration-300">Projects</a>
+                <a href="github.html" class="hover:text-cyan-400 transition-all duration-300">GitHub</a>
+                <a href="about.html" class="hover:text-cyan-400 transition-all duration-300">About</a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white text-2xl hover:text-cyan-400 transition-colors duration-300">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile nav -->
+        <nav id="mobile-nav" class="hidden flex-col glass-effect w-full py-6 space-y-4 text-center md:hidden">
+            <a href="index.html" class="text-cyan-400 font-semibold py-2">Home</a>
+            <a href="projects.html" class="hover:text-cyan-400 transition-all duration-300 py-2">Projects</a>
+            <a href="github.html" class="hover:text-cyan-400 transition-all duration-300 py-2">GitHub</a>
+            <a href="about.html" class="hover:text-cyan-400 transition-all duration-300 py-2">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-cyan-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400 rounded-full blur-3xl opacity-20 animate-pulse delay-1000"></div>
+        </div>
+        
+        <div class="text-center relative z-10 max-w-6xl mx-auto">
+            <!-- Badge -->
+            <div class="inline-flex items-center bg-cyan-400/20 px-6 py-3 rounded-full border border-cyan-400/30 text-cyan-300 text-lg mb-8 backdrop-blur-sm fade-in">
+                <i class="fa-solid fa-rocket mr-3"></i>
+                Full Stack Developer & Mobile App Specialist
+            </div>
+            
+            <!-- Main Heading -->
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-300 to-cyan-400 animate-gradient fade-in">
+              Nikhil's Project Hub  
+            </h1>
+            
+            <!-- Subheading -->
+            <p class="text-2xl md:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed fade-in" style="transition-delay: 0.2s">
+                I'm <span class="text-cyan-400 font-bold">Nikhil</span>, a passionate developer crafting 
+                <span class="text-cyan-400 font-semibold">digital experiences</span> that make a difference
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 fade-in" style="transition-delay: 0.4s">
+                <a href="projects.html" class="group inline-flex items-center px-10 py-5 bg-cyan-400 text-black font-bold rounded-2xl hover:bg-cyan-300 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-400/30 text-xl">
+                    <i class="fa-solid fa-code mr-4 group-hover:rotate-12 transition-transform duration-300 text-2xl"></i>
+                    Explore My Projects
+                    <i class="fa-solid fa-arrow-right ml-4 group-hover:translate-x-2 transition-transform duration-300"></i>
+                </a>
+                
+                <a href="about.html" class="group inline-flex items-center px-10 py-5 border-2 border-cyan-400 text-cyan-400 font-bold rounded-2xl hover:bg-cyan-400 hover:text-black transition-all duration-300 transform hover:-translate-y-2 text-xl">
+                    <i class="fa-solid fa-user mr-4 group-hover:scale-110 transition-transform duration-300 text-2xl"></i>
+                    Know More About Me
+                </a>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto fade-in" style="transition-delay: 0.6s">
+                <div class="text-center p-6 glass-effect rounded-2xl hover:border-cyan-400/40 transition-all duration-300 group">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform duration-300">4+</div>
+                    <div class="text-gray-300 text-lg">Mobile Apps</div>
+                    <div class="text-cyan-400 text-sm mt-2">React Native</div>
+                </div>
+                
+                <div class="text-center p-6 glass-effect rounded-2xl hover:border-cyan-400/40 transition-all duration-300 group">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform duration-300">2+</div>
+                    <div class="text-gray-300 text-lg">Web Projects</div>
+                    <div class="text-cyan-400 text-sm mt-2">Modern Tech</div>
+                </div>
+                
+                <div class="text-center p-6 glass-effect rounded-2xl hover:border-cyan-400/40 transition-all duration-300 group">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform duration-300">10+</div>
+                    <div class="text-gray-300 text-lg">GitHub Repos</div>
+                    <div class="text-cyan-400 text-sm mt-2">Open Source</div>
+                </div>
+                
+                <div class="text-center p-6 glass-effect rounded-2xl hover:border-cyan-400/40 transition-all duration-300 group">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform duration-300">100%</div>
+                    <div class="text-gray-300 text-lg">Passionate</div>
+                    <div class="text-cyan-400 text-sm mt-2">Always Learning</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="fixed  bottom-0 left-1/2 mx-auto transform -translate-x-1/2 fade-in" style="transition-delay: 0.8s">
+            <div class="animate-bounce">
+                <i class="fa-solid fa-chevron-down text-cyan-400 text-2xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="py-20 px-6 bg-gradient-to-br from-blue-900/50 to-cyan-900/50 relative overflow-hidden">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-5xl font-bold mb-4 text-center fade-in">
+                <i class="fa-solid fa-star mr-4 text-cyan-400"></i>
+              
+            </h2>
+            <p class="text-xl text-gray-300 text-center mb-12 max-w-2xl mx-auto fade-in">
+                A glimpse of my favorite creations that showcase my skills and passion
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+             
+                <div class="fade-in glass-effect p-6 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                    <div class="text-5xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img class="w-16 h-16 rounded-2xl" src="./assets/Gemini_Generated_Image_pc9q9vpc9q9vpc9q.png" alt="Country Info">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-cyan-400">Country Info</h3>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">
+                        React Native app with comprehensive country data and beautiful UI.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-cyan-400 text-sm">React Native</span>
+                        <a href="projects.html#apps" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+       
+                <div class="fade-in glass-effect p-6 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                    <div class="text-5xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img class="w-16 h-16 rounded-2xl" src="./assets/Checkmark Icon on Orange Background.png" alt="Taskfiy">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-cyan-400">Taskfiy</h3>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">
+                        Firebase-powered task management app with real-time sync.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-cyan-400 text-sm">React Native + Firebase</span>
+                        <a href="projects.html#apps" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fade-in glass-effect p-6 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                    <div class="text-5xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-laptop-code text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-cyan-400">Portfolio Website</h3>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">
+                        Modern responsive portfolio with smooth animations and clean design.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-cyan-400 text-sm">HTML/CSS/JS</span>
+                        <a href="projects.html#web" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="text-center fade-in">
+                <a href="projects.html" class="inline-flex items-center px-8 py-4 border-2 border-cyan-400 text-cyan-400 font-bold rounded-xl hover:bg-cyan-400 hover:text-black transition-all duration-300 transform hover:-translate-y-1 text-lg group">
+                    View All Projects
+                    <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-2 transition-transform duration-300"></i>
+                </a>
+            </div>
+        </div>
+    </section> 
+
+    <!-- About Preview -->
+    <section class="py-20 px-6 bg-gradient-to-br from-purple-900/50 to-blue-900/50 relative overflow-hidden">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-5xl font-bold mb-8 fade-in">
+                <i class="fa-solid fa-heart mr-4 text-cyan-400"></i>
+                Passion Meets Code
+            </h2>
+            
+            <div class="fade-in" style="transition-delay: 0.2s">
+                <p class="text-xl text-gray-300 leading-relaxed mb-8">
+                    I believe in creating digital solutions that not only work flawlessly but also 
+                    <span class="text-cyan-400 font-semibold">delight users</span>. Every line of code I write is driven by 
+                    curiosity and a desire to make technology more accessible and enjoyable.
+                </p>
+                
+                <p class="text-xl text-gray-300 leading-relaxed mb-12">
+                    From mobile apps to web experiences, I'm constantly exploring new technologies and 
+                    pushing the boundaries of what's possible in the digital world.
+                </p>
+            </div>
+
+            <!-- Quick Skills -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12 fade-in" style="transition-delay: 0.4s">
+                <div class="text-center p-4 glass-effect rounded-xl">
+                    <i class="fa-brands fa-react text-cyan-400 text-2xl mb-2"></i>
+                    <div class="text-gray-300">React Native</div>
+                </div>
+                <div class="text-center p-4 glass-effect rounded-xl">
+                    <i class="fa-brands fa-js text-yellow-400 text-2xl mb-2"></i>
+                    <div class="text-gray-300">JavaScript</div>
+                </div>
+                <div class="text-center p-4 glass-effect rounded-xl">
+                    <i class="fa-solid fa-database text-blue-400 text-2xl mb-2"></i>
+                    <div class="text-gray-300">Firebase</div>
+                </div>
+            </div>
+
+            <!-- Know More Button -->
+            <div class="fade-in" style="transition-delay: 0.6s">
+                <a href="https://portfolio-xi-ten-dat6htivsj.vercel.app/" class="inline-flex items-center px-8 py-4 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 transform hover:-translate-y-1 text-lg group">
+                    <i class="fa-solid fa-user mr-3 group-hover:scale-110 transition-transform duration-300"></i>
+                    Get to Know Me Better
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-6 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-900/20 to-purple-900/20"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 fade-in">
+                Ready to Create Something Amazing?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 fade-in" style="transition-delay: 0.2s">
+                Let's turn your ideas into reality with cutting-edge technology and creative solutions.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center fade-in" style="transition-delay: 0.4s">
+                <a href="projects.html" class="group inline-flex items-center px-8 py-4 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 transform hover:-translate-y-1 text-lg">
+                    <i class="fa-solid fa-eye mr-3 group-hover:scale-110 transition-transform duration-300"></i>
+                    Explore My Work
+                </a>
+                
+                <a href="about.html#contact" class="group inline-flex items-center px-8 py-4 border-2 border-cyan-400 text-cyan-400 font-bold rounded-xl hover:bg-cyan-400 hover:text-black transition-all duration-300 transform hover:-translate-y-1 text-lg">
+                    <i class="fa-solid fa-paper-plane mr-3 group-hover:scale-110 transition-transform duration-300"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 glass-effect border-t border-cyan-400/20 text-center">
+        <div class="container mx-auto">
+            <div class="flex justify-center space-x-8 mb-6 text-2xl">
+                <a href="https://www.linkedin.com/in/nikhil-keshvala-985786327/" target="_blank" 
+                   class="hover:text-cyan-400 transition-all duration-300 transform hover:scale-110">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/NK-infinite" target="_blank" 
+                   class="hover:text-cyan-400 transition-all duration-300 transform hover:scale-110">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:nikhilkeshvala1@gmail.com" 
+                   class="hover:text-cyan-400 transition-all duration-300 transform hover:scale-110">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p class="text-gray-400 text-lg">
+                Crafted with ❤️ by Nikhil
+            </p>
+            <p class="text-gray-500 text-sm mt-2">
+                &copy; 2025 Dev World. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const loading = document.getElementById('loading');
+                loading.style.opacity = '0';
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 700);
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.className = mobileNav.classList.contains('hidden') ? 
+                'fa-solid fa-bars' : 'fa-solid fa-xmark';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
