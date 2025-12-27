@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +15,18 @@
             transform: translateY(30px);
             transition: all 0.6s ease-out;
         }
-        
+
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .glass-effect {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .active-tab {
             background: rgba(6, 182, 212, 0.2);
             border-color: rgb(6, 182, 212);
@@ -38,7 +39,8 @@
     <!-- Header -->
     <header class="fixed w-full glass-effect z-50 py-4 shadow-lg">
         <div class="container mx-auto flex justify-between items-center px-6">
-            <a href="index.html" class="text-2xl font-bold text-cyan-400 hover:scale-105 transition-transform duration-300">
+            <a href="index.html"
+                class="text-2xl font-bold text-cyan-400 hover:scale-105 transition-transform duration-300">
                 Dev World by Nikhil
             </a>
 
@@ -80,21 +82,24 @@
             <div class="absolute -top-40 -right-40 w-80 h-80 bg-cyan-400 rounded-full blur-3xl opacity-20"></div>
             <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400 rounded-full blur-3xl opacity-20"></div>
         </div>
-        
+
         <div class="relative z-10 max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400 fade-in">
+            <h1
+                class="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400 fade-in">
                 My Projects
             </h1>
             <p class="text-xl text-gray-300 mb-8 fade-in" style="transition-delay: 0.2s">
                 Explore my collection of mobile apps and web projects built with modern technologies
             </p>
-            
+
             <!-- Tab Navigation -->
             <div class="flex space-x-4 justify-center mb-12 fade-in" style="transition-delay: 0.4s">
-                <button id="mobile-tab" class="px-6 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300 active-tab">
+                <button id="mobile-tab"
+                    class="px-6 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300 active-tab">
                     <i class="fa-solid fa-mobile-alt mr-2"></i>Mobile Apps
                 </button>
-                <button id="web-tab" class="px-6 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
+                <button id="web-tab"
+                    class="px-6 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
                     <i class="fa-solid fa-globe mr-2"></i>Web Projects
                 </button>
             </div>
@@ -106,118 +111,197 @@
         <div class="container mx-auto max-w-6xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- App 1 -->
-                <div class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                <div
+                    class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
                     <div class="flex items-start justify-between mb-6">
                         <div class="text-5xl">
-                            <img class="w-16 h-16 rounded-2xl" src="./assets/Gemini_Generated_Image_pc9q9vpc9q9vpc9q.png" alt="Country Info">
+                            <img class="w-16 h-16 rounded-2xl"
+                                src="./assets/Gemini_Generated_Image_pc9q9vpc9q9vpc9q.png" alt="Country Info">
                         </div>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React Native</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React
+                            Native</span>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-cyan-400">Country Info</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        A comprehensive React Native application that provides detailed information about countries worldwide. 
+                        A comprehensive React Native application that provides detailed information about countries
+                        worldwide.
                         Features beautiful UI, search functionality, and smooth animations.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">REST API</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">UI/UX</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Navigation</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">REST
+                            API</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">UI/UX</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Navigation</span>
                     </div>
                     <div class="flex space-x-4">
-                        <a href="https://drive.google.com/file/d/11xo1aOcYO_H7EekWygAhP7H55X7wPCRQ/view?usp=drive_link" class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
+                        <a href="https://drive.google.com/file/d/11xo1aOcYO_H7EekWygAhP7H55X7wPCRQ/view?usp=drive_link"
+                            class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
                             <i class="fa-solid fa-download mr-2 group-hover:animate-bounce"></i>
                             Download APK
                         </a>
-                        <a href="https://github.com/NK-infinite/CountryInfo" target="_blank" class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
+                        <a href="https://github.com/NK-infinite/CountryInfo" target="_blank"
+                            class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- App 2 -->
-                <div class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                <div
+                    class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
                     <div class="flex items-start justify-between mb-6">
                         <div class="text-5xl">
-                            <img class="w-16 h-16 rounded-2xl" src="./assets/Checkmark Icon on Orange Background.png" alt="Taskfiy">
+                            <img class="w-16 h-16 rounded-2xl" src="./assets/Checkmark Icon on Orange Background.png"
+                                alt="Taskfiy">
                         </div>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React Native</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React
+                            Native</span>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-cyan-400">Taskfiy</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        A powerful task management app built with React Native and Firebase. 
+                        A powerful task management app built with React Native and Firebase.
                         Features real-time synchronization, user authentication, and intuitive task organization.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Firebase</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Real-time DB</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Authentication</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Firebase</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Real-time
+                            DB</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Authentication</span>
                     </div>
                     <div class="flex space-x-4">
-                        <a href="https://drive.google.com/file/d/1XAcR6d7yBeH2NyQ7mnHvhG4HmIF-qJv1/view?usp=drive_link" class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
+                        <a href="https://drive.google.com/file/d/1XAcR6d7yBeH2NyQ7mnHvhG4HmIF-qJv1/view?usp=drive_link"
+                            class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
                             <i class="fa-solid fa-download mr-2 group-hover:animate-bounce"></i>
                             Download APK
                         </a>
-                        <a href="https://github.com/NK-infinite/Taskify" target="_blank" class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
+                        <a href="https://github.com/NK-infinite/Taskify" target="_blank"
+                            class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- App 3 -->
-                <div class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                <div
+                    class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
                     <div class="flex items-start justify-between mb-6">
                         <div class="text-5xl">
-                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-white font-bold text-xl">A</div>
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-white font-bold text-xl">
+                                A</div>
                         </div>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React Native</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React
+                            Native</span>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-cyan-400">Account App</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        A personal finance management app that helps track income and expenses. 
+                        A personal finance management app that helps track income and expenses.
                         Features local storage, expense categorization, and financial insights.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Local Storage</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Charts</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Finance</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Local
+                            Storage</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Charts</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Finance</span>
                     </div>
                     <div class="flex space-x-4">
 
-                        <a href="https://drive.google.com/file/d/1PpqzHbSxvpFNUWvZ75QGTNtulvlmLy-4/view?usp=drive_link" class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
+                        <a href="https://drive.google.com/file/d/1PpqzHbSxvpFNUWvZ75QGTNtulvlmLy-4/view?usp=drive_link"
+                            class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
                             <i class="fa-solid fa-download mr-2 group-hover:animate-bounce"></i>
                             Download APK
                         </a>
-                        <a href="https://github.com/NK-infinite/AccountApp" target="_blank" class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
+                        <a href="https://github.com/NK-infinite/AccountApp" target="_blank"
+                            class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- App 4 -->
-                <div class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                <div
+                    class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
                     <div class="flex items-start justify-between mb-6">
                         <div class="text-5xl">
                             <img class="w-16 h-16 rounded-2xl" src="./assets/chatboc.png" alt="ChatBox">
                         </div>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React Native</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React
+                            Native</span>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-cyan-400">ChatBox</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        A real-time chat application with Firebase backend. 
+                        A real-time chat application with Firebase backend.
                         Features message sending, friend requests, online status, and modern chat interface.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Firebase</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Real-time</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Chat</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Firebase</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Real-time</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Chat</span>
                     </div>
                     <div class="flex space-x-4">
-                        <a href="https://drive.google.com/file/d/16yw_-V7JANOw1cByX63ymVcsGjiC-FiW/view?usp=drive_link" 
-                        class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
+                        <a href="https://drive.google.com/file/d/16yw_-V7JANOw1cByX63ymVcsGjiC-FiW/view?usp=drive_link"
+                            class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
                             <i class="fa-solid fa-download mr-2 group-hover:animate-bounce"></i>
                             Download APK
                         </a>
-                        <a href="https://github.com/NK-infinite/ChatBox" target="_blank" class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
+                        <a href="https://github.com/NK-infinite/ChatBox" target="_blank"
+                            class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- App 5 -->
+                <div
+                    class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="text-5xl">
+                            <img class="w-22 h-16" src="./assets/PDFLab.png" alt="PDF Lab">
+                        </div>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React
+                            Native</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-cyan-400">PDF Lab</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        PDF Lab is your all-in-one PDF solution! Before you download, explore its features:
+                        A comprehensive React Native application that lets you manage PDFs efficiently.
+                        Features beautiful UI, search functionality, and smooth animations.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">React
+                            Native</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">PDF
+                            Operations</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Search
+                            & Edit</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://drive.google.com/file/d/1R5KbYj38t9b1AOJqargTyUgDh5LXIQLY/view?usp=drive_link"
+                            class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
+                            <i class="fa-solid fa-download mr-2 group-hover:animate-bounce"></i>
+                            Download APK
+                        </a>
+                        <a href="https://github.com/NK-infinite/PDFLab-APP" target="_blank"
+                            class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
@@ -231,58 +315,74 @@
         <div class="container mx-auto max-w-4xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Web Project 1 -->
-                <div class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
+                <div
+                    class="fade-in glass-effect p-8 rounded-2xl hover:border-cyan-400/40 transition-all duration-500 hover:scale-105 group">
                     <div class="flex items-start justify-between mb-6">
                         <div class="text-5xl text-cyan-400">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Portfolio</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Portfolio</span>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-cyan-400">Personal Portfolio</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        A modern, responsive portfolio website showcasing my skills, projects, and achievements. 
+                        A modern, responsive portfolio website showcasing my skills, projects, and achievements.
                         Built with clean design and smooth animations.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">HTML/CSS</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">JavaScript</span>
-                        <span class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Tailwind</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">HTML/CSS</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">JavaScript</span>
+                        <span
+                            class="px-3 py-1 bg-cyan-400/20 text-cyan-300 rounded-full text-sm border border-cyan-400/30">Tailwind</span>
                     </div>
                     <div class="flex space-x-4">
-                        <a href="https://portfolio-xi-ten-dat6htivsj.vercel.app/" target="_blank" class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
-                            <i class="fa-solid fa-external-link-alt mr-2 group-hover:rotate-45 transition-transform"></i>
+                        <a href="https://portfolio-xi-ten-dat6htivsj.vercel.app/" target="_blank"
+                            class="flex-1 text-center px-4 py-3 bg-cyan-400 text-black font-bold rounded-xl hover:bg-cyan-300 transition-all duration-300 group">
+                            <i
+                                class="fa-solid fa-external-link-alt mr-2 group-hover:rotate-45 transition-transform"></i>
                             Visit Website
                         </a>
-                        <a href="https://github.com/NK-infinite/Portfolio" target="_blank" class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
+                        <a href="https://github.com/NK-infinite/Portfolio" target="_blank"
+                            class="px-4 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Web Project 2 -->
-                <div class="fade-in glass-effect p-8 rounded-2xl hover:border-yellow-400/40 transition-all duration-500 hover:scale-105 group">
+                <div
+                    class="fade-in glass-effect p-8 rounded-2xl hover:border-yellow-400/40 transition-all duration-500 hover:scale-105 group">
                     <div class="flex items-start justify-between mb-6">
                         <div class="text-5xl text-yellow-400">
                             <i class="fa-brands fa-js"></i>
                         </div>
-                        <span class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">JavaScript</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">JavaScript</span>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-yellow-400">JavaScript Practice</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        A collection of JavaScript mini-projects and exercises. 
+                        A collection of JavaScript mini-projects and exercises.
                         Demonstrates various DOM manipulation techniques and modern JavaScript features.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">ES6+</span>
-                        <span class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">DOM</span>
-                        <span class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">Practice</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">ES6+</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">DOM</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-400/20 text-yellow-300 rounded-full text-sm border border-yellow-400/30">Practice</span>
                     </div>
                     <div class="flex space-x-4">
-                        <a href="https://java-script-task-beta.vercel.app/" target="_blank" class="flex-1 text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-xl hover:bg-yellow-300 transition-all duration-300 group">
-                            <i class="fa-solid fa-external-link-alt mr-2 group-hover:rotate-45 transition-transform"></i>
+                        <a href="https://java-script-task-beta.vercel.app/" target="_blank"
+                            class="flex-1 text-center px-4 py-3 bg-yellow-400 text-black font-bold rounded-xl hover:bg-yellow-300 transition-all duration-300 group">
+                            <i
+                                class="fa-solid fa-external-link-alt mr-2 group-hover:rotate-45 transition-transform"></i>
                             Visit Website
                         </a>
-                        <a href="https://github.com/NK-infinite/JavaScript-Task" target="_blank" class="px-4 py-3 glass-effect rounded-xl hover:border-yellow-400/40 transition-all duration-300">
+                        <a href="https://github.com/NK-infinite/JavaScript-Task" target="_blank"
+                            class="px-4 py-3 glass-effect rounded-xl hover:border-yellow-400/40 transition-all duration-300">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
@@ -293,7 +393,8 @@
 
     <!-- Back to Top -->
     <div class="text-center py-12">
-        <a href="index.html" class="inline-flex items-center px-6 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300 group">
+        <a href="index.html"
+            class="inline-flex items-center px-6 py-3 glass-effect rounded-xl hover:border-cyan-400/40 transition-all duration-300 group">
             <i class="fa-solid fa-arrow-left mr-3 group-hover:-translate-x-1 transition-transform"></i>
             Back to Home
         </a>
@@ -323,11 +424,11 @@
         // Mobile menu
         const menuBtn = document.getElementById('menu-btn');
         const mobileNav = document.getElementById('mobile-nav');
-        
+
         menuBtn.addEventListener('click', () => {
             mobileNav.classList.toggle('hidden');
             const icon = menuBtn.querySelector('i');
-            icon.className = mobileNav.classList.contains('hidden') ? 
+            icon.className = mobileNav.classList.contains('hidden') ?
                 'fa-solid fa-bars' : 'fa-solid fa-xmark';
         });
 
@@ -345,4 +446,5 @@
         });
     </script>
 </body>
+
 </html>
